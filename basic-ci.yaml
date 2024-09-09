@@ -2,12 +2,20 @@ name: Python CI/CD
 
 on:
   push:
+<<<<<<< HEAD
     branches: main
+=======
+    branches: [main]
+>>>>>>> af7e53fe1a3fecd1931e50c757e9236eb78e0770
     paths:
       - ".github/workflows/basic-ci.yaml"
       - "basic-ci/**"
   pull_request:
+<<<<<<< HEAD
     branches: main
+=======
+    branches: [main]
+>>>>>>> af7e53fe1a3fecd1931e50c757e9236eb78e0770
     paths:
       - ".github/workflows/basic-ci.yaml"
       - "basic-ci/**"
@@ -114,4 +122,8 @@ jobs:
       - name: Deploy application
         run: |
           cd ${{ env.PROJECT_DIR }}
+<<<<<<< HEAD
           echo "Deploying version ${{ github.event.inputs.version }} to ${{ github.event.inputs.environment }} environment"
+=======
+          echo "Deploying version ${{ github.event.inputs.version }} to ${{ github.event.inputs.environment }} environment"
+>>>>>>> af7e53fe1a3fecd1931e50c757e9236eb78e0770
