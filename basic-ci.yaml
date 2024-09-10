@@ -2,12 +2,12 @@ name: Python CI/CD
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
     paths:
       - ".github/workflows/basic-ci.yaml"
       - "basic-ci/**"
   pull_request:
-    branches: [ main ]
+    branches: [main]
     paths:
       - ".github/workflows/basic-ci.yaml"
       - "basic-ci/**"
